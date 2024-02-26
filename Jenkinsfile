@@ -9,7 +9,7 @@ pipeline {
 
         stage ('Unit Tests') {
             steps {
-                bat 'mvn test'
+                bat 'mvn clean test verify'
             }
         }
 
