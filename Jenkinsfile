@@ -19,7 +19,7 @@ pipeline {
             }
             steps {
                 withSonarQubeEnv('SONAR_LOCAL') {
-                    bat "${scannerHome}/bin/sonar-scanner -e -Dsonar.projectKey=DeployBack -Dsonar.host.url=http://192.168.1.6:9000 -Dsonar.login=sqp_dfdb9e452696a5c61932d7fd8ecb26438841fd56 -Dsonar.java.binaries=target -Dsonar.coverage.exclusions=**/.mvn/**,**/src/test/**,**/model/**,**Application.java,**/src/main/java/br/ce/wcaquino/taskbackend/controller/**,**/src/main/java/br/ce/wcaquino/taskbackend/utils/ValidationException.java"
+                    bat "${scannerHome}/bin/sonar-scanner -e -Dsonar.projectKey=DeployBack -Dsonar.host.url=http://192.168.1.6:9000 -Dsonar.login=squ_a2b4836e7bbdfd0eb8b2963086153bac789d6f24 -Dsonar.java.binaries=target -Dsonar.coverage.exclusions=**/.mvn/**,**/src/test/**,**/model/**,**Application.java,**/src/main/java/br/ce/wcaquino/taskbackend/controller/**,**/src/main/java/br/ce/wcaquino/taskbackend/utils/ValidationException.java"
                 }
             }
         }
